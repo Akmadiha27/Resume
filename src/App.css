@@ -1,0 +1,156 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  background-color: #f9f9f9;
+}
+
+.resume-container {
+  width: 210mm; /* A4 width */
+  min-height: 297mm; /* A4 height */
+  margin: 0 auto;
+  padding: 25mm 20mm;
+  font-size: 11pt;
+  line-height: 1.4;
+  background-color: white;
+  color: #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header section */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #1a1a1a;
+  padding-bottom: 10px;
+}
+
+.name {
+  font-size: 22pt;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #1a1a1a;
+  letter-spacing: 1px;
+}
+
+.contact-info {
+  font-size: 10.5pt;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Section styling */
+.section {
+  margin-bottom: 18px;
+}
+
+.section-title {
+  font-size: 14pt;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 1px solid #444;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+  letter-spacing: 0.5px;
+}
+
+/* Technical Skills */
+.skills-list {
+  list-style-type: none;
+  padding-left: 5px;
+}
+
+.skills-list li {
+  margin-bottom: 6px;
+  padding: 2px 0;
+  font-size: 10.5pt;
+}
+
+/* Education */
+.education-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.education-details {
+  flex: 3;
+}
+
+.degree {
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.grade {
+  font-size: 10.5pt;
+}
+
+.education-dates {
+  flex: 1;
+  text-align: right;
+  font-size: 10.5pt;
+}
+
+/* Experience and Projects */
+.item {
+  margin-bottom: 12px;
+}
+
+.item-title {
+  font-weight: 600;
+  margin-bottom: 3px;
+  font-size: 11pt;
+}
+
+.item-subtitle {
+  font-style: italic;
+  margin-bottom: 4px;
+  font-size: 10.5pt;
+  color: #444;
+}
+
+.item-description {
+  text-align: justify;
+  font-size: 10.5pt;
+  margin-left: 5px;
+  color: #333;
+}
+
+/* Lists */
+.list-items {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.list-items li {
+  margin-bottom: 6px;
+  padding-left: 5px;
+  font-size: 10.5pt;
+}
+
+/* Print optimization */
+@media print {
+  body {
+    background-color: white;
+  }
+  
+  .resume-container {
+    width: 210mm;
+    height: 297mm;
+    margin: 0;
+    padding: 20mm;
+    box-shadow: none;
+  }
+  
+  @page {
+    size: A4;
+    margin: 0;
+  }
+}
